@@ -20,4 +20,4 @@
       ansible.builtin.debug:
         msg: "Hello from PLAY-3 and TASK-3"
 
-#SYNTAX: ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 01-paybook.yaml
+#SYNTAX: ansible-playbook -i inventory.ini -e ansible_user=centos -e ansible_password=DevOps321 01-paybook.yaml

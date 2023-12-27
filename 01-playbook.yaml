@@ -5,4 +5,4 @@
       ansible.builtin.ping:
 
 
-        #syntax:ansible -i inventory web --list-hosts
+        #syntax:ansible -i inventory.ini web --list-hosts
