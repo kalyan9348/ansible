@@ -3,3 +3,6 @@
   tasks:
     - name: ping the server
       ansible.builtin.ping:
+
+
+        #syntax:ansible -i inventory web --list-hosts
