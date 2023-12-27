@@ -15,5 +15,5 @@
   tasks:
     - name: check variables
       ansible.builtin.debug:
-        msg: " Hi, I am learning devops course, trainer is sivakumar and duration is 110HRS"
-        #msg: ""Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}""
+        #msg: " Hi, I am learning devops course, trainer is sivakumar and duration is 110HRS"
+        msg: ""Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}""
