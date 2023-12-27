@@ -10,12 +10,14 @@
 #      ansible.builtin.debug:
 #        msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
 #PLAY LEVEL VARIABLES
+  #Below code upto duration is Related to Play leve
 - name: Variables from play level
   hosts: localhost
   vars:
     Course: "DevOps"
     Trainer: "Sivakumar"
     Duration: "110HRS"
+    #Below code is related to TASK LEVEL , It acts as a Child as in inheritance.
   tasks:
     - name: check variables
       ansible.builtin.debug:

@@ -1,0 +1,12 @@
+- name: variables from PLAY level
+  hosts: localhost
+  tasks:
+    - name: check variables
+      ansible.builtin.debug:
+        msg: "Hello {{PERSON}}, Good {{WISHES}}"
+
+#Syntax: here we need to give arguments in code
+#Below 3 lines is one syntax
+# ansible-playbook -i inventory.ini -e ansible_user=centos
+#  -e ansible_password=DevOps321 -e "PERSON=SivaKumar"
+#  -e "WISHES=Morning" 09-vars-from-args.yaml
