@@ -1,0 +1,23 @@
+# playbook is a list of Plays
+- name: PLAY-1   #this refers name of the playbook usage of this playbook
+  hosts: localhost
+  tasks:
+    - name: PLAY-1 and TASK-1  #Tasks need to be done for this playbook
+      ansible.builtin.debug:
+        msg: "Hello from PLAY-1 and TASK-1"
+
+- name: PLAY-2
+  hosts: localhost
+  tasks:
+    - name: PLAY-2 and TASK-2
+      ansible.builtin.debug:
+        msg: "Hello from PLAY-2 and TASK-2"
+
+- name: PLAY-3
+  hosts: local host
+  tasks:
+    - name: PLAY-3 and TASK-3
+      ansible.builtin.debug:
+        msg: "Hello from PLAY-3 and TASK-3"
+
+#SYNTAX: ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 01-paybook.yaml
